@@ -1,0 +1,10 @@
+name: astrbot_plugin_face_echo
+display_name: 表情附和
+author: wjn1121
+version: 1.0.0
+desc: QQ 群聊贴表情附和插件——群友给消息贴了表情回应后，机器人给同一条消息贴上相同的表情
+short_desc: 跟着群友贴表情
+repo: https://github.com/wjn1121/astrbot_plugin_face_echo
+support_platforms:
+  - aiocqhttp
+astrbot_version: ">=4.16"

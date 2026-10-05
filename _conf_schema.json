@@ -1,0 +1,41 @@
+{
+  "enable": {
+    "description": "启用表情附和",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后插件不再跟随群友贴表情"
+  },
+  "probability": {
+    "description": "附和概率",
+    "type": "float",
+    "default": 1.0,
+    "hint": "0~1 之间，1 表示有人贴表情就一定跟随；调低可减少机器人存在感",
+    "slider": { "min": 0, "max": 1, "step": 0.05 }
+  },
+  "cooldown": {
+    "description": "同群冷却时间（秒）",
+    "type": "int",
+    "default": 0,
+    "hint": "同一群聊在冷却时间内不再附和，0 表示不限制",
+    "slider": { "min": 0, "max": 300, "step": 1 }
+  },
+  "max_faces": {
+    "description": "单次最多附和几个表情",
+    "type": "int",
+    "default": 1,
+    "hint": "一条消息被同时贴上多个表情时，最多跟随前几个",
+    "slider": { "min": 1, "max": 5, "step": 1 }
+  },
+  "ignore_self": {
+    "description": "忽略机器人自己的贴表情",
+    "type": "bool",
+    "default": true,
+    "hint": "机器人贴表情后协议端也会上报该事件，不忽略会导致贴完立刻取消，务必保持开启"
+  },
+  "group_whitelist": {
+    "description": "生效群号白名单",
+    "type": "list",
+    "default": [],
+    "hint": "留空表示所有群生效；填写群号后仅在列出的群附和"
+  }
+}

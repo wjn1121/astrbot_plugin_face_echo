@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project doc (AI-generated, not for distribution)
+CLAUDE.md
+
+# Local config & credentials (never upload)
+.env
+.env.*
+*.key
+*.pem
+credentials*.json
